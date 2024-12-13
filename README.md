@@ -10,10 +10,10 @@ This project implements a basic image enhancing pipeline in C, providing functio
 - **Sequential Enhancements**: Apply multiple enhancements in the order specified via command-line arguments.
 
 
-### Build the program 
+## Build the program 
 make
 
-#### Usage 
+## Usage 
 **Command-Line Arguments**:
 ./image_pipeline -i <input_file> -o <output_file> -e <enhancement_type> [-e <enhancement_type> ...]
 
@@ -27,7 +27,7 @@ Supported types:
 - sharpen: Sharpens the image.
 Multiple -e options can be specified to apply enhancements sequentially.
 
-##### Example
+## Example
 Apply sharpening and contrast adjustment:
 
 ./image_pipeline -i input.png -o output.png -e sharpen -e contrast

@@ -1,3 +1,35 @@
+/******************************************************************************************************************
+* @file main.c
+* @brief Entry point for the Image Enhancement Pipeline
+*
+* Course: CPE2600
+* Section: 111
+* Assignment: CPE Lab 13
+* Author: Carla Sastre
+*
+* Description: This is the main file for the image processing pipeline. It processes PNG images using functions
+*              from `image_processing.c` to apply various enhancements, including brightness adjustment, 
+*              contrast adjustment, and sharpening. Command-line arguments specify the input, output, and 
+*              enhancements to be applied.
+* Date: 12/11/2024
+*
+* Usage:
+*   ./image_pipeline -i <input_file> -o <output_file> -e <enhancement_type> [-e <enhancement_type> ...]
+* 
+*
+* Supported Enhancements:
+*       - brightness: Adjusts image brightness
+*       - contrast:   Adjusts image contrast
+*       - sharpen:    Sharpens the image
+*
+*
+* Compile Instructions:
+*   To compile this file, use:
+*   - make
+*   Or manually:
+*   - gcc -o image_pipeline main.c image_processing.c -lpng -lm
+******************************************************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

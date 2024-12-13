@@ -1,3 +1,25 @@
+/******************************************************************************************************************
+* @file image_processing.c
+* @brief Image Enhancement Pipeline with Brightness, Contrast, and Sharpening Features
+*
+* Course: CPE2600
+* Section: 111
+* Assignment: CPE Lab 13
+* Author: Carla Sastre
+*
+* Description: This program processes PNG images by applying various enhancements such as brightness adjustment, 
+*              contrast adjustment, and sharpening. Multiple enhancements can be applied sequentially via 
+*              command-line arguments.
+* Date: 12/11/2024
+*
+* Compile Instructions:
+*   To compile this file, use:
+*   - make
+*   Or manually:
+*   - gcc -o image_pipeline main.c image_processing.c -lpng -lm
+******************************************************************************************************************/
+
+
 #include "image_processing.h"
 #include <png.h> //using libpng library 
 #include <stdio.h>
